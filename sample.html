@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us - Tranquil Reapers</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Pop-up animation keyframes */
+    @keyframes popup {
+      from {
+        opacity: 0;
+        transform: scale(0.9) translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+      }
+    }
+
+    /* Apply animation to everything inside the container */
+    .container {
+      animation: popup 0.6s ease-out forwards;
+      opacity: 0; /* Start hidden, will fade in */
+    }
+
+    /* Icons layout */
+    .contact-icons {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 30px;
+    }
+
+    .contact-icons a img {
+      width: 80px;
+      height: auto;
+      transition: transform 0.3s ease;
+    }
+
+    .contact-icons a img:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Tranquil Reapers</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="intro">
+        <h2>Connect With Us</h2>
+        <p>Follow Tranquil Reapers on our social media platforms to stay updated with rides, events, and more.</p>
+        <div class="contact-icons">
+          <a href="https://www.facebook.com/sample" target="_blank">
+            <img src="images/facebook.png" alt="Facebook">
+          </a>
+          <a href="https://www.instagram.com/sample" target="_blank">
+            <img src="images/instagram.png" alt="Instagram">
+          </a>
+          <a href="https://www.tiktok.com/@sample" target="_blank">
+            <img src="images/tiktok.png" alt="TikTok">
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Tranquil Reapers Motorcycle Club</p>
+    </footer>
+  </div>
+
+  <script>
+    // Start the animation after the page loads
+    window.onload = function () {
+      document.querySelector('.container').style.opacity = '1';
+    };
+  </script>
+</body>
+</html>

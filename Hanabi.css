@@ -1,0 +1,99 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #222;
+  padding: 1em 0;
+  text-align: center;
+  z-index: 1000;
+}
+
+nav a {
+  color: white;
+  margin: 0 20px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #1abc9c;
+}
+
+/* Section Styles */
+section {
+  height: 100vh;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+/* Glow effect on h1 hover */
+section h1 {
+  transition: 0.3s ease;
+}
+
+section h1:hover {
+  text-shadow: 0 0 10px #1abc9c, 0 0 20px #1abc9c, 0 0 30px #1abc9c;
+  color: #ffffff;
+  cursor: default;
+}
+
+/* Background images for each section */
+#home {
+  background-image: url('hanabi1.JPG'); /* Replace with your actual image path */
+}
+
+#about {
+  background-image: url('hanabi2.JPEG'); /* Replace with your actual image path */
+}
+
+#contact {
+  background-image: url('hanabi3.JPG'); /* Replace with your actual image path */
+}
+
+.transparent-box {
+  background-color: rgba(2, 1, 1, 0.89); /* Black with 50% transparency */
+  padding: 1em 2em;
+  border-radius: 10px;
+  max-width: 80%;
+}
+
+/* Social Media Buttons */
+.social-icons {
+  margin-top: 1em;
+}
+
+.social-btn {
+  display: inline-block;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2); /* semi-transparent circle */
+  padding: 12px;
+  margin: 0 10px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.social-btn:hover {
+  background-color: #1abc9c; /* same as nav hover color */
+  transform: scale(1.2);
+}

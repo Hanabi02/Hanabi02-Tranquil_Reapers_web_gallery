@@ -1,0 +1,3 @@
+http://localhost:8080/phpmyadmin
+
+point of sale site : http://localhost:8080/simple_pos/

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us - Tranquil Reapers</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+       body {
+      background: url('image/trp4.jpeg') no-repeat center center fixed;
+      background-size: cover;
+    }
+    /* Pop-up animation keyframes */
+    @keyframes popup {
+      from {
+        opacity: 0;
+        transform: scale(0.9) translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+      }
+    }
+
+    /* Apply animation to everything inside the container */
+    .container {
+      animation: popup 0.6s ease-out forwards;
+      opacity: 0; /* Start hidden, will fade in */
+    }
+
+    /* Icons layout */
+    .contact-icons {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 30px;
+    }
+
+    .contact-icons a img {
+      width: 80px;
+      height: auto;
+      transition: transform 0.3s ease;
+    }
+
+    .contact-icons a img:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Contact us</h1>
+      <nav>
+       
+        <a href="about.html">Back</a>
+       
+      </nav>
+    </header>
+
+    <main>
+      <section class="intro">
+        <h2>Connect With Us</h2>
+        <p>Follow us on our official social media platforms for the latest rides, events, and a glimpse into the TRP lifestyle.
+Ride with us. Roll with the pack. 💀.</p>
+        <div class="contact-icons">
+          <a href="https://www.facebook.com/share/19A43YKuLE/?mibextid=wwXIfr" target="_blank">
+            <img src="image/trpfb.png" alt="Facebook">
+            
+              
+          </a>
+          <a href="https://www.instagram.com/tranquilreapersph?igsh=MXU4OW82dHd5OG01aQ==" target="_blank">
+            <img src="image/trpig.png" alt="Instagram">
+          </a>
+          <a href=" https://www.tiktok.com/@tranquil.reapers?_t=ZS-8xzS7QmF2CF&_r=1" target="_blank">
+            <img src="image/trptt.png" alt="TikTok">
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Tranquil Reapers</p>
+    </footer>
+  </div>
+
+  <script>
+    // Start the animation after the page loads
+    window.onload = function () {
+      document.querySelector('.container').style.opacity = '1';
+    };
+  </script>
+</body>
+</html>

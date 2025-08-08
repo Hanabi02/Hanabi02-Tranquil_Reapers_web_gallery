@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scroll Down Website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="Hanabi.css">
+</head>
+  <meta charset="UTF-8">
+  <title>Scroll Down Website</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Navigation Bar */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #222;
+      padding: 1em 0;
+      text-align: center;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #1abc9c;
+    }
+
+    /* Section Styles */
+    section {
+      height: 100vh;
+      padding-top: 80px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      text-align: center;
+    }
+
+    /* Background images for each section */
+    #home {
+      background-image: url('image/siete2.jpeg'); /* Replace with your image */
+    }
+
+    #about {
+      background-image: url('image/siete3.jpeg'); /* Replace with your image */
+    }
+
+    #contact {
+      background-image: url('image/siete4.jpeg'); /* Replace with your image */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="members.html">Back</a>
+  </nav>
+
+  <!-- Sections -->
+  <section id="home">
+    <h1>Ride with the Reapers</h1>
+    <p>Step Into Our World.</p>
+  </section>
+
+ <section id="about">
+    <h1>About Me</h1>
+    <div class="transparent-box">
+    <p> The Youngest Legend | Retro Soul. Racer Heart.
+
+Name’s Rouie Solamo, but in the TRP , they call me “Siete” a nod to my custom-built café racer, clean and classic, just like the number 7 in Latin. I’m the youngest rider in the crew, but don’t mistake youth for weakness  I ride with purpose, style, and heart.
+Before I hit the throttle, I played the field a football player by blood, but the streets and steel found me. Now, I channel that same passion into every curve and chrome of my build.
+
+Vintage vibes. Retro roots. Full respect.
+That’s what I stand for. My café racer? One of the cleanest in the game.
+
+They call me the “Youngest Legend” in Tranquil Reapers RC  not just for the ride, but for the soul I bring to it.
+
+Style is loud. Loyalty is louder.
+TRP for life.
+    </p>
+    </div>
+  </section>
+
+ <section id="contact">
+  <h1>Contact</h1>
+  <div class="transparent-box">
+    <p>Feel free to reach out through my social media or email.</p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/share/18bSJsJEYd/?mibextid=wwXIfr" target="_blank" class="social-btn">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.tiktok.com/@baljeetboy?_t=ZS-8ygTOsWxgtm&_r=1" target="_blank" class="social-btn">
+        <i class="fab fa-tiktok"></i>
+      </a>
+      <a href="https://www.instagram.com/r.solvmo?igsh=OXhzZGRxMnFpMXhz" target="_blank" class="social-btn">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

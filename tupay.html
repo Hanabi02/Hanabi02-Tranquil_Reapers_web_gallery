@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scroll Down Website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="Hanabi.css">
+</head>
+  <meta charset="UTF-8">
+  <title>Scroll Down Website</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Navigation Bar */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #222;
+      padding: 1em 0;
+      text-align: center;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #1abc9c;
+    }
+
+    /* Section Styles */
+    section {
+      height: 100vh;
+      padding-top: 80px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      text-align: center;
+    }
+
+    /* Background images for each section */
+    #home {
+      background-image: url('image/tupay2.jpeg'); /* Replace with your image */
+    }
+
+    #about {
+      background-image: url('image/tupay3.jpeg'); /* Replace with your image */
+    }
+
+    #contact {
+      background-image: url('image/tupay4.jpeg'); /* Replace with your image */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="members.html">Back</a>
+  </nav>
+
+  <!-- Sections -->
+  <section id="home">
+    <h1>Ride with the Reapers</h1>
+    <p>Step Into Our World.</p>
+  </section>
+
+ <section id="about">
+    <h1>About Me</h1>
+    <div class="transparent-box">
+    <p>Tupay! one of the cleanest retro riders rolling with the Tranquil Reapers RC. My weapon of choice? A custom-built Café 152, solid to the core, crafted with heart, and riding with soul.
+
+I live for the vintage scene  raw metal, timeless lines, and the kind of ride that turns heads without trying. My style isn’t just about the bike  it’s a lifestyle. Every detail on my build speaks discipline, passion, and respect for the old school.
+
+With TRP, I don’t just ride I represent.
+No shortcuts. No fakes. Just pure riding culture
+    </p>
+    </div>
+  </section>
+
+ <section id="contact">
+  <h1>Contact</h1>
+  <div class="transparent-box">
+    <p>Feel free to reach out through my social media or email.</p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/share/18bSJsJEYd/?mibextid=wwXIfr" target="_blank" class="social-btn">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.tiktok.com/@miguelfelixmakiri?_t=ZS-8ygV5BToZOM&_r=1" target="_blank" class="social-btn">
+        <i class="fab fa-tiktok"></i>
+      </a>
+      <a href="https://www.instagram.com/tupay_hm?igsh=MXdpd3VlZ3V5c3ZqNA==" target="_blank" class="social-btn">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

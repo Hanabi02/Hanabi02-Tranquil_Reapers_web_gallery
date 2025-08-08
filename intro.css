@@ -1,0 +1,129 @@
+/* Smooth gradient background animation */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(-45deg, #ff4e50, #2e2e2e, #d0d9e2, #4e1007);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Glitch layer ::before and ::after */
+body::before,
+body::after {
+  content: "";
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  height: 100%;
+  background: inherit;
+  mix-blend-mode: screen;
+  opacity: 0.1;
+  pointer-events: none;
+  z-index: -1;
+  animation: glitch 2s infinite;
+}
+
+/* Shift effect for glitching */
+body::after {
+  animation-delay: 1s;
+}
+
+/* Logo styling */
+.logo {
+  width: 200px;
+  height: auto;
+  margin-bottom: 20px;
+  animation: fadeIn 2s ease-in;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  cursor: pointer;
+}
+
+/* Logo hover effect */
+.logo:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 10px #fff) drop-shadow(0 0 20px #f00);
+}
+
+/* Glowing heading */
+h1 {
+  font-size: 3rem;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+/* Bouncing button */
+.btn {
+  margin-top: 30px;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  color: rgb(250, 0, 0);
+  background-color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  animation: bounce 2s infinite;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #333;
+  transform: scale(1.1);
+}
+
+/* Keyframes */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #ff4e50, 0 0 30px #f9d423;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff1e1e, 0 0 40px #e72ebf;
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0); 
+  }
+  40% {
+    transform: translateY(-20px); 
+  }
+  60% {
+    transform: translateY(-10px); 
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Glitch animation keyframes */
+@keyframes glitch {
+  0% { transform: translate(0, 0); }
+  20% { transform: translate(-5px, 5px); }
+  40% { transform: translate(5px, -5px); }
+  60% { transform: translate(-5px, 5px); }
+  80% { transform: translate(5px, -5px); }
+  100% { transform: translate(0, 0); }
+}
